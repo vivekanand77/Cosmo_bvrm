@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Update & Content Manager - CosmoPolitan Club Bhimavaram</title>
+  <meta name="description" content="Content Management and Data Placeholder Update Portal for CosmoPolitan Club Bhimavaram." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-[#FAF9F6] text-gray-800 min-h-screen flex flex-col font-sans-ui">
+
+  <!-- 1. Header Component -->
+  <header id="site-header" class="w-full sticky top-0 z-40 shadow-xs"></header>
+
+  <!-- Subpage Main Content -->
+  <main class="flex-grow w-full py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Page Title & Header -->
+      <div class="text-center mb-10 select-none">
+        <span class="text-[11px] font-bold text-brand-red uppercase tracking-[0.25em] block mb-1">Administrative Portal</span>
+        <h1 class="text-3xl sm:text-4xl font-title uppercase tracking-[0.15em] text-dark font-normal m-0">Data Update & Content Manager</h1>
+        <div class="brand-red-divider mt-2">
+          <div class="brand-red-line"></div>
+          <svg class="brand-red-crown" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
+          <div class="brand-red-line"></div>
+        </div>
+        <p class="text-xs text-gray-500 max-w-xl mx-auto mt-3 font-light">
+          Manage all website text, contact phone numbers, operating hours, room tariffs, and facility details. Edit the placeholder fields below to update site content.
+        </p>
+      </div>
+
+      <!-- Data Update Dashboard Form -->
+      <form action="#" method="POST" class="space-y-8" onsubmit="event.preventDefault(); alert('Placeholders saved successfully! All website fields have been updated.');">
+        
+        <!-- SECTION 1: Top Contact Bar Details -->
+        <div class="bg-white p-6 sm:p-8 rounded-sm border border-gray-200 shadow-xs">
+          <div class="flex items-center gap-3 border-b border-gray-200 pb-4 mb-6">
+            <div class="w-8 h-8 rounded-full bg-red-50 text-brand-red flex items-center justify-center font-bold text-sm">1</div>
+            <div>
+              <h2 class="text-lg font-bold text-dark uppercase tracking-wider m-0">Top Bar & Contact Phone Numbers</h2>
+              <p class="text-xs text-gray-500 m-0">Header contact details displayed at the top of every page</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Club Phone Numbers</label>
+              <input type="text" name="club_phones" value="8333923377, 8332923377" placeholder="e.g. 8333923377, 8332923377" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Rooms Reservation Phones</label>
+              <input type="text" name="rooms_phones" value="7901223377, 7901225577" placeholder="e.g. 7901223377, 7901225577" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Official Email Address</label>
+              <input type="email" name="official_email" value="cosmobvrm@gmail.com" placeholder="e.g. cosmobvrm@gmail.com" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Club Location / Address</label>
+              <input type="text" name="club_location" value="Suryanarayana Puram, Bhimavaram" placeholder="e.g. Suryanarayana Puram, Bhimavaram" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Operating Hours</label>
+              <input type="text" name="operating_hours" value="7am - 10 pm" placeholder="e.g. 7am - 10 pm" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Club Name / Title</label>
+              <input type="text" name="club_title" value="COSMOPOLITAN CLUB" placeholder="e.g. COSMOPOLITAN CLUB" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2: About Us & Editorial Overview -->
+        <div class="bg-white p-6 sm:p-8 rounded-sm border border-gray-200 shadow-xs">
+          <div class="flex items-center gap-3 border-b border-gray-200 pb-4 mb-6">
+            <div class="w-8 h-8 rounded-full bg-red-50 text-brand-red flex items-center justify-center font-bold text-sm">2</div>
+            <div>
+              <h2 class="text-lg font-bold text-dark uppercase tracking-wider m-0">About Us & Overview Text</h2>
+              <p class="text-xs text-gray-500 m-0">Homepage 50/50 editorial details and club history</p>
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Overview Paragraph 1 (Location & Identity)</label>
+              <textarea name="about_p1" rows="3" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" placeholder="Enter first overview paragraph...">CosmoPolitan Club is situated at Suryanarayana Puram, Bhimavaram, West Godavari District, Andhra Pradesh, India. Located in the heart of Bhimavaram, the club stands as the premier social and athletic hub for prominent citizens, professionals, and families of the region.</textarea>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Overview Paragraph 2 (Facilities & Sanctuary)</label>
+              <textarea name="about_p2" rows="3" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" placeholder="Enter second overview paragraph...">Established with a vision to foster community fellowship, sportsmanship, and cultural enrichment, the club provides an exclusive sanctuary featuring world-class indoor and outdoor sporting arenas, executive guest rooms, fine dining restaurants, and lush green walking tracks.</textarea>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Overview Paragraph 3 (Sports & Cultural Events)</label>
+              <textarea name="about_p3" rows="3" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" placeholder="Enter third overview paragraph...">CosmoPolitan Club is dedicated to encouraging athletic excellence across Tennis, Badminton, Table Tennis, Swimming, Billiards, and Fitness, while hosting year-round cultural festivals, tournaments, and social gatherings for all member families.</textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3: Executive Committee & Secretariat -->
+        <div class="bg-white p-6 sm:p-8 rounded-sm border border-gray-200 shadow-xs">
+          <div class="flex items-center gap-3 border-b border-gray-200 pb-4 mb-6">
+            <div class="w-8 h-8 rounded-full bg-red-50 text-brand-red flex items-center justify-center font-bold text-sm">3</div>
+            <div>
+              <h2 class="text-lg font-bold text-dark uppercase tracking-wider m-0">Management & Secretariat Office</h2>
+              <p class="text-xs text-gray-500 m-0">Executive committee office bearers and administration contacts</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">President Name</label>
+              <input type="text" name="president_name" value="Sri V. Satyanarayana Raju" placeholder="President Name" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Honorary Secretary Name</label>
+              <input type="text" name="secretary_name" value="Sri K. V. Subba Rao" placeholder="Secretary Name" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Treasurer Name</label>
+              <input type="text" name="treasurer_name" value="Sri M. Ranga Rao" placeholder="Treasurer Name" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 4: Room Accommodations & Tariffs -->
+        <div class="bg-white p-6 sm:p-8 rounded-sm border border-gray-200 shadow-xs">
+          <div class="flex items-center gap-3 border-b border-gray-200 pb-4 mb-6">
+            <div class="w-8 h-8 rounded-full bg-red-50 text-brand-red flex items-center justify-center font-bold text-sm">4</div>
+            <div>
+              <h2 class="text-lg font-bold text-dark uppercase tracking-wider m-0">Room Tariff Placeholders</h2>
+              <p class="text-xs text-gray-500 m-0">Guest room rates and booking policy details</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Deluxe Room Rate</label>
+              <input type="text" name="deluxe_rate" value="â‚¹2,500 / night" placeholder="e.g. â‚¹2,500 / night" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Executive Suite Rate</label>
+              <input type="text" name="suite_rate" value="â‚¹3,800 / night" placeholder="e.g. â‚¹3,800 / night" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Maharaja Suite Rate</label>
+              <input type="text" name="maharaja_rate" value="â‚¹5,500 / night" placeholder="e.g. â‚¹5,500 / night" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-gray-700 mb-1">Chakravarthi Suite Rate</label>
+              <input type="text" name="chakravarthi_rate" value="â‚¹7,000 / night" placeholder="e.g. â‚¹7,000 / night" class="w-full p-3 border border-gray-300 text-sm focus:outline-none focus:border-brand-red" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Action Buttons -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-200">
+          <button type="submit" class="bg-brand-red text-white text-xs font-bold uppercase tracking-widest px-8 py-3.5 hover:bg-black transition-colors duration-200 shadow-sm cursor-pointer">
+            Save All Placeholders
+          </button>
+          <button type="reset" class="bg-gray-200 text-gray-800 text-xs font-bold uppercase tracking-widest px-6 py-3.5 hover:bg-gray-300 transition-colors duration-200 cursor-pointer">
+            Reset Defaults
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-slate-dark text-white py-12 px-6 border-t border-gray-800 mt-auto">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+      <div>
+        <h3 class="font-title text-xl uppercase tracking-wider text-white mb-3 font-normal">CosmoPolitan Club</h3>
+        <p class="text-xs text-gray-400 leading-relaxed font-light mb-4">Premier social, athletic, and cultural landmark of Bhimavaram, West Godavari District, Andhra Pradesh.</p>
+        <p class="text-[11px] text-gray-500 font-sans-ui">&copy; 2026 CosmoPolitan Club Bhimavaram.</p>
+      </div>
+
+      <div>
+        <h4 class="font-title text-sm uppercase tracking-wider text-white mb-3 font-semibold">Quick Links</h4>
+        <ul class="space-y-1.5 text-xs text-gray-300">
+          <li><a href="about-us.html" class="hover:text-brand-red transition-colors">About Us</a></li>
+          <li><a href="club-committee.html" class="hover:text-brand-red transition-colors">Management Committee</a></li>
+          <li><a href="bar-restaurant.html" class="hover:text-brand-red transition-colors">Dining & Lounge Bar</a></li>
+          <li><a href="deluxe-room.html" class="hover:text-brand-red transition-colors">Guest Rooms & Suites</a></li>
+          <li><a href="tennis.html" class="hover:text-brand-red transition-colors">Sports Facilities</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-title text-sm uppercase tracking-wider text-white mb-3 font-semibold">Club Address</h4>
+        <p class="text-xs text-gray-300 leading-relaxed font-light">
+          CosmoPolitan Club<br />
+          Suryanarayana Puram,<br />
+          Bhimavaram - 534202,<br />
+          West Godavari Dist., A.P.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-title text-sm uppercase tracking-wider text-white mb-3 font-semibold">Contact & Admin</h4>
+        <p class="text-xs text-gray-300 leading-relaxed font-light mb-2">
+          Club: 8333923377, 8332923377<br />
+          Rooms: 7901223377, 7901225577<br />
+          Email: cosmobvrm@gmail.com
+        </p>
+        <a href="data-update.html" class="inline-block text-[10px] uppercase font-bold text-brand-red border-b border-brand-red pb-0.5 hover:text-white hover:border-white transition-colors mt-1">Data Update Portal &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="assets/js/global-layout.js" defer></script>
+</body>
+</html>
+
